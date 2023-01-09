@@ -2,7 +2,7 @@
 
 Basic framework for creating your own Google Chrome extensions:<br>
 <br>-The ```manifest.json``` file contains the metadata for the extension, such as its name, version, and permissions.
-<br>-The ```icon.png``` file is the icon for the extension.
+<br>-The ```icon.png``` file is the icon for the extension:<br>_The dimensions of the icon.png file should be 128x128 pixels.    This is the size recommended by the Chrome Extension documentation for the browser action icon. You can also use a larger    image and resize it down to 128x128 pixels if you want to have a higher resolution icon._
 <br>-The ```popup.html``` file contains the HTML code for the popup window that will be displayed when the user clicks on the extension icon.
 <br>-The ```popup.css``` file contains the CSS styles for the popup window.
 <br>-The ```popup.js``` file contains the JavaScript code for the popup window.

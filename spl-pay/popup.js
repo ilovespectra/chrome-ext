@@ -13,6 +13,6 @@ document.getElementById('submit-button').addEventListener('click', function(even
   // You will need to log the user in to their Solflare wallet and retrieve their address
   const fromAddress = 'your-user-address';
 
-  // Call the buyPrepaidVisaGiftCardWithCrypto function to complete the payment
-  buyPrepaidVisaGiftCardWithCrypto(web3, fromAddress, paymentAmount, paymentCurrency);
+  // Call the completeSplTransaction function to complete the payment
+  completeSplTransaction(web3, fromAddress, paymentAmount, paymentCurrency);
 });

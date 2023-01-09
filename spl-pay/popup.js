@@ -6,6 +6,16 @@ web3.setProvider(new web3.providers.HttpProvider('https://api.solflare.com/v1/we
 document.getElementById('submit-button').addEventListener('click', function(event) {
   event.preventDefault();
 
+  // Include the Web3.js library
+  const Web3 = require('web3');
+
+  // Create an instance of the web3 object
+  const web3 = new Web3();
+  
+  // Set the provider for the web3 object to use the Solflare API
+  web3.setProvider(new web3.providers.HttpProvider('https://api.solflare.com/v1/web3/YOUR-API-KEY'));
+
+
   // Retrieve the payment details from the form fields
   const paymentAmount = document.getElementById('payment-amount').value;
   const paymentCurrency = document.getElementById('payment-currency').value;
